@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: lightgreen;
+    color: aliceblue;
+}
+
+header {
+    background-color: rgb(96, 160, 96);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+    font-size: 38px;
+    padding: 10px;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.titulo:hover {
+    color: lightgreen;
+}
+
+.titulo {
+    display: block;
+    cursor: pointer;
+    color: white;
+}
+
+header img {
+    width: 6em;
+    margin-left: 2em;
+}
+
+header li {
+    display: inline;
+    padding: 16px;
+    font-size: 18px;
+    color: rgb(3, 61, 3);
+}
+
+header li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(5, 90, 5);
+}
+
+header li a:hover {
+    border-bottom: green solid 5px;
+    color: white;
+}
+
+.container-sobre {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.article-sobre {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    margin-top: 40px;
+    align-items: center;
+    color: rgb(3, 61, 3);
+    background-color: rgb(117, 194, 117);
+}
+
+.sobre h2,
+.sobre p {
+    display: block;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 2080px;
+    width: 100%;
+    margin: 1em 0;
+    background-color: rgb(117, 194, 117);
+    align-content: center;
+    padding: 1em;
+}
+
+.container img {
+    width: 80%;
+    max-width: 50em;
+}
+
+.container h3 {
+    margin: 0.5em 0;
+    font-size: 28px;
+}
+
+.container h2 {
+    border-bottom: green solid 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+    color: rgb(3, 61, 3);
+    
+}
+
+section p {
+    width: 80%;
+    margin: 0.5em 0;
+}
+
+.container ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.container button {
+    margin-top: 1em;
+    padding: 10px;
+    display: block;
+    color: rgb(116, 197, 116);
+    background-color: rgb(3, 61, 3);
+    border: none;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: rgb(7, 109, 7);
+
+}
