@@ -10,12 +10,12 @@ html {
 }
 
 body {
-    background-color: lightgreen;
-    color: aliceblue;
+    background-color: rgb(189, 196, 187);
+    color: rgb(3, 61, 3);
 }
 
 header {
-    background-color: rgb(96, 160, 96);
+    background-color: rgb(30, 68, 30);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,14 +28,8 @@ header h1 {
     text-align: center;
 }
 
-header h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 .titulo:hover {
-    color: lightgreen;
+    color: rgb(8, 182, 8);
 }
 
 .titulo {
@@ -59,16 +53,16 @@ header li {
 header li a {
     text-decoration: none;
     cursor: pointer;
-    color: rgb(5, 90, 5);
+    color: white;
 }
 
 header li a:hover {
     border-bottom: green solid 5px;
-    color: white;
+    color: rgb(8, 182, 8);
 }
 
 .container-sobre {
-    max-width: 960px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
@@ -80,46 +74,57 @@ header li a:hover {
     margin-top: 40px;
     align-items: center;
     color: rgb(3, 61, 3);
-    background-color: rgb(117, 194, 117);
+    background-color: rgb(108, 165, 108);
+}
+
+* .sobre h2 {
+    font-style: italic;
+    border-bottom: rgb(30, 68, 30) solid 5px;
+    color: rgb(8, 182, 8);
 }
 
 .sobre h2,
 .sobre p {
     display: block;
     padding: 20px;
+    color: aliceblue;
 }
 
 .container {
     display: flex;
-    max-width: 2080px;
+    max-width: 1024px;
     width: 100%;
-    margin: 1em 0;
-    background-color: rgb(117, 194, 117);
+    margin: 15px auto;
     align-content: center;
-    padding: 1em;
 }
 
 .container img {
-    width: 80%;
-    max-width: 50em;
+    width: 100%;
+    max-width: 60em;
 }
 
 .container h3 {
     margin: 0.5em 0;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .container h2 {
-    border-bottom: green solid 6px;
+    border-bottom: rgb(30, 68, 30) solid 6px;
     padding: 16px;
     margin-bottom: 16px;
     color: rgb(3, 61, 3);
-    
+    font-style: italic;
+
 }
 
 section p {
-    width: 80%;
+    width: 100%;
     margin: 0.5em 0;
+}
+
+
+.container ul li {
+    padding: 1em;
 }
 
 .container ul {
@@ -132,13 +137,156 @@ section p {
     margin-top: 1em;
     padding: 10px;
     display: block;
-    color: rgb(116, 197, 116);
-    background-color: rgb(3, 61, 3);
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 68, 30);
     border: none;
     cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
 }
 
 .container button:hover {
     background-color: rgb(7, 109, 7);
+
+}
+
+@media screen and (max-width: 844px) {
+
+    header {
+        background-color: rgb(30, 68, 30);
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 6em;
+        margin-left: 150px;
+    }
+
+    .titulo {
+        text-align: center;
+        margin: 10px;
+    }
+
+    header li a {
+        margin: auto 2em;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    .container-sobre {
+        max-width: 896px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-sobre img {
+        max-width: 20em;
+    }
+
+    .article-sobre {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        margin-top: 40px;
+        align-items: center;
+        color: rgb(3, 61, 3);
+        background-color: rgb(108, 165, 108);
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .container ul {
+        display: block;
+        list-style: none;
+        margin-bottom: 24px;
+    }
+
+}
+
+@media screen and (min-width: 845px) and (max-width: 1280px) {
+
+    body {
+        display: flex;
+    }
+
+    header {
+        background-color: rgb(30, 68, 30);
+        display: flex;
+    }
+
+    .titulo {
+        cursor: pointer;
+        color: white;
+    }
+
+    header h1 {
+        font-family: 'ZCOOL KuaiLe', sans-serif;
+        font-size: 38px;
+        display: flex;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 6em;
+        margin: 0 0;
+    }
+
+    header li {
+        padding: 0;
+    }
+
+    header li a {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+    }
+
+    .container-sobre {
+        align-items: center;
+        width: 590;
+    }
+
+    .article-sobre {
+        display: block;
+    }
+
+    .container-sobre img {
+        max-width: 50em;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .container ul{
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container ul li {
+        max-width: 50%;
+    }
+
+    .container li img {
+        max-width: 100%;
+}
 
 }
